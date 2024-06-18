@@ -1,0 +1,689 @@
+<style type="text/css">
+
+.layout-aside, .main-h, .heading.heading--xl {
+    display: none;
+}
+
+.container-sense a {
+    text-decoration: none;
+    color: inherit !important;
+}
+
+
+.container-sense p, h2, h3, h4 {
+    margin: 0 !important;
+}
+
+.container-sense img {
+    margin: 0;
+}
+
+.container-sense {
+    min-height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-sense .main-s-title {
+    font-weight: 400 !important;
+    margin: 0 0 32px !important;
+}
+
+.container-sense .text-12 {
+    font-size: 12px;
+    line-height: 15.6px;
+}
+
+.container-sense .text-17 {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 5px !important;
+}
+
+.sense-title {
+    color: #000;
+    font-size: 22px !important;
+    font-style: normal !important;
+    font-weight: 700;
+    line-height: 28.6px; /* 130% */
+    text-transform: uppercase;
+}
+
+.sense-subtitle {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    font-weight: 700;
+}
+
+.container-sense .purple {
+    color: #6758BE;
+}
+
+.sense__contacts__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 42px !important;
+}
+.sense__contacts__item {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.sense__contacts__title {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.sense__contacts__title .sense-subtitle {
+    margin-bottom: 10px !important;
+}
+
+.sense__contacts__title a {
+    display: block;
+}
+
+.sense__contacts__messanges {
+    margin-bottom: 18px !important;
+}
+.sense__contacts__messanges a {
+    font-weight: 700;
+}
+
+.sense__timetable {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 20px !important;
+}
+
+.sense__timetable__item:not(:last-child) {
+    border-right: 1px solid #E8E8E8;
+}
+
+.sense__timetable__item h4 {
+    margin-bottom: 14px !important;
+    font-size: 14px !important;
+}
+
+.sense__timetable__content {
+    display: flex;
+    gap: 26px;
+}
+
+.sense__timetable__content__days {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sense__contacts__item ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: 700;
+}
+
+.sense__contacts__item ul li {
+    padding: 0 !important;
+}
+
+.sense__contacts__item ul li::before {
+   display: none !important;
+}
+
+.sense__contacts__item ul li:not(:last-child) {
+    margin-bottom: 11px !important;
+}
+
+.sense__form__block {
+    padding: 30px 0 !important;
+    border-top: 1px solid #6758BD;
+    border-bottom: 1px solid #6758BD;
+    margin-bottom: 18px !important;
+}
+
+.sense__form__block .sense-title {
+    margin-bottom: 22px !important;
+}
+
+.sense__form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 13px;
+}
+
+.sense__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px; 
+}
+
+.sense__row.text-9 {
+    font-size: 9px;
+    line-height: 11.7px;
+    color: #7B7B7B;
+}
+.sense__row.text-9 span {
+    font-size: 13px;
+}
+
+.sense__column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sense__column.sense-gap {
+    gap: 6px;
+}
+
+.sense__column textarea {
+    height: 100%;
+}
+
+.input-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sense__form input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #C6C6C7;
+    background: inherit;
+}
+
+.sense__form  select {
+    appearance: none;
+    background-image: url("/content/uploads/images/icon-arrow-select.svg");
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.875rem top 50%, 0 0;
+}
+
+.sense__form input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
+    outline: 1px solid #C6C6C7;
+}
+
+.sense__form input.empty {
+    border: 1px solid #E94235;
+}
+
+.add-file  input {
+    display: none;
+}
+
+.add-file  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.add-file  label span {
+    color: #6758BE;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sense__form__button{
+    cursor: pointer;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    background: #6758BE;
+    padding: 7px;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14.95px; /* 115% */
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+
+@media (min-width: 769px) {
+    .sense__form__button:hover {
+        background: #9387D9
+    }
+}
+
+.sense__form input::placeholder {  
+    color: #ACACAC;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container-sense .contacts-map {
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+}
+
+.container-sense .contacts-map .contacts-map-canvas {
+    height: 600px;
+}
+
+.thanks_popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 150;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 200ms ease-in;
+    margin: 0px;
+    padding: 0;
+}
+
+.thanks_popup.active {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+  }
+
+  .thanks_popup-dialog {
+    position: relative;
+    width: 679px;
+    margin: 46px auto;
+  }
+
+  .thanks_popup-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 117px 80px;
+    outline: 0;
+    color: #000;
+  }
+
+  .thanks_popup-header {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thanks_popup-header .sense-title {
+    max-width: 315px;
+  }
+
+  .thanks_popup-header .thanks-icon {
+    max-width: 224px;
+    min-height: 224px;
+    margin-bottom: 60px;
+  }
+
+  .thanks_popup-header .close_popup {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+
+  .thanks_popup-body {
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+
+@media (max-width: 768px) {
+
+    .container-sense .main-s-title {
+        margin: 0 0 20px !important;
+    }
+    
+    .sense-title {
+        font-size: 18px !important;
+    }
+    
+    .sense__contacts__content {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 32px !important;
+    }
+    
+    .sense__contacts__title {
+        margin-bottom: 18px;
+    }
+    
+    .sense__contacts__title .sense-subtitle {
+        margin-bottom: 6px !important;
+    }
+
+    .call-me__mob {
+        display: none !important;
+    }
+    
+    .sense__contacts__messanges {
+        margin-bottom: 14px !important;
+    }
+    
+    .sense__timetable {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 18px !important;
+    }
+    
+    .sense__timetable__item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #E8E8E8;
+        padding-bottom: 12px;
+    }
+    
+    .sense__timetable__item h4 {
+        margin-bottom: 8px !important;
+    }
+    
+    .sense__form__block {
+        padding: 24px 0 !important;
+        margin-bottom: 32px !important;
+    }
+    
+    .sense__form__block .sense-title {
+        margin-bottom: 14px !important;
+    }
+    
+    .sense__row {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 14px; 
+    }
+    
+    .sense__column {
+        gap: 14px;
+    }
+    
+    .sense__column.sense-gap {
+        gap: 14px;
+    }
+    
+    .sense__form__button{
+        width: 100%;
+    }
+    
+    .container-sense .contacts-map .contacts-map-canvas {
+        height: 300px;
+    }
+
+      .thanks_popup-dialog {
+        width: calc(100% - 30px);
+      }
+    
+      .thanks_popup-content {
+        padding: 54px;
+      }
+    
+      .thanks_popup-header {
+        margin-bottom: 14px;
+      }
+    
+      .thanks_popup-header .sense-title {
+        max-width: 237px;
+      }
+    
+      .thanks_popup-header .thanks-icon {
+        max-width: 132px;
+        min-height: 132px;
+        margin-bottom: 32px;
+      }
+    
+      .thanks_popup-header .close_popup {
+        right: 10px;
+        top: 10px;
+        width: 24px;
+        height: 24px;
+      }
+}
+
+</style>
+<main>
+    <div class="container-sense">
+        <h1 class="main-s-title">Контактна інформація</h1>
+        <div class="sense__contacts">
+            <div class="sense__contacts__content">
+                <div class="sense__contacts__item">
+                    <div class="sense__contacts__title">
+                        <img src="/content/uploads/images/icon-phone.svg" alt="img" width="32" height="32">
+                        <div>
+                            <h3 class="sense-subtitle">Наш телефон</h3>
+                            <a class="text-17" href="tel:380935044070">093-504-40-70</a>
+                            <a class="text-12 call-me__mob" href="#" data-modal="#call-me">Передзвонити вам?</a>
+                        </div>
+                    </div>
+                    <p class="sense__contacts__messanges">Ви можете звартатись до нас у месенджерах: 
+                        <a href="https://t.me/sens_kyiv" target="_blank">Telegram</a>, 
+                        <a href="viber://chat?number=%2B380935044070" target="_blank">Viber</a>, 
+                        <a href="https://api.whatsapp.com/send?phone=%2B380935044070" target="_blank"><span style="color:#3498DB;">WhatsApp</span></a>
+                    </p>
+                    <p>Наш <a href="https://youtube.com/@sens_kyiv" target="_blank"><span style="color:#9B59B6;">youtube канал</span></a>. </p>
+
+
+                </div>
+                <div class="sense__contacts__item">
+                    <div class="sense__contacts__title">
+                        <img src="/content/uploads/images/icon-viber.svg" alt="img" width="32" height="32">
+                        <div>
+                            <h3 class="sense-subtitle">Адреса</h3>
+                            <p class="text-17"><i>Київ, пров. Микільський 1/25</i></p>
+                            <a class="text-12" href="#map_canvas">Мапа проїзду</a>
+                        </div>
+                    </div>
+                    <div class="sense__timetable">
+                        <div class="sense__timetable__item">
+                            <h4>Розклад роботи книгарні:</h4>
+                            <div class="sense__timetable__content">
+                                <div class="sense__timetable__content__days">
+                                    <p>Пн-Пт:</p>
+                                    <p>08:00 - 22:00</p>
+                                </div>
+                                <div class="sense__timetable__content__days">
+                                    <p>Сб-Нд:</p>
+                                    <p>09:00 - 22:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sense__timetable__item">
+                            <h4>Розклад роботи інтернет-магазину:</h4>
+                            <div class="sense__timetable__content">
+                                <div class="sense__timetable__content__days">
+                                    <p>Пн-Нд:</p>
+                                    <p>10:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Видача інтернет-замовлень в книгарні з 10:00 до 21:00. </li>
+                        <li>Працюємо без перерви та вихідних. </li>
+                        <li>Книги відправляємо щодня!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sense__form__block">
+            <h2 class="sense-title">Звʼязатися з Сенсом</h2>
+            <form class="sense__form">
+                <div class="sense__row">
+                    <div class="sense__column">
+                        <div class="input-block">
+                            <label for="username">Ваше ім’я<span class="purple">*</span></label>
+                            <input type="text" name="user_name" id="username" placeholder="Анна">
+                        </div>
+                        <div class="input-block">
+                            <label for="userphone">Номер телефону</label>
+                            <input type="phone" name="user_phone" id="userphone" maxlength="13" placeholder="+38 (0_ _)-_ _ _-_ _-_ _">
+                        </div>
+                    </div>
+                    <div class="sense__column">
+                        <div class="input-block">
+                            <label for="useremail">E-mail<span class="purple">*</span></label>
+                            <input type="text" name="user_email" id="useremail" class="" placeholder="Ваш E-mail">
+                        </div>
+                        <div class="input-block">
+                            <label for="userquestion">Питання, яке цікавить<span class="purple">*</span></label>
+                            <select name="user_question" id="userquestion">
+                                <option value="order">Онлайн замовлення</option>
+                                <option value="work">Робота в Сенсі</option>
+                                <option value="cooperation">Співпраця</option>
+                                <option value="about-sense">Написати про Сенс</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sense__column sense-gap">
+                        <div class="add-file">
+                            <input type="file" name="user_file" id="user_file">
+                            <label for="user_file">
+                                <img src="/content/uploads/images/add-file.svg" alt="" width="18" height="18">
+                                <span> Прикріпити файл</span>
+                            </label>
+                        </div>
+                        <textarea name="usermessage" cols="30" rows="6" placeholder="Текст Вашого повідомлення"></textarea>
+                    </div>
+                </div>
+                <div class="sense__row text-9">
+                    <p><span class="purple">*</span> - Поля із зазначеним символом <b>обов'язкові до заповнення.</b></p>
+                    <button class="sense__form__button open_thanks_popup">надіслати</button>
+                </div>    
+            </form>
+        </div>
+        <div class="contacts-map">
+            <div class="contacts-map-canvas" id="map_canvas">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.4549657679564!2d30.5485967174732!3d50.44004439586791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf26e93d6ad1%3A0xdbbb7f77b5e5167b!2sSens!5e0!3m2!1sen!2sua!4v1655220779003!5m2!1sen!2sua"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="thanks_popup">
+        <div class="thanks_popup-dialog">
+            <div class="thanks_popup-content">
+                <div class="thanks_popup-header">
+                    <img class="close_popup" src="/content/uploads/images/ic_outline-close.svg" alt="x">
+                    <img class="thanks-icon" src="/content/uploads/images/thanks-icon.svg" alt="" >
+                    <h2 class="sense-title">Дякуємо за звернення до команди Сенс!</h2>
+                </div>
+                <div class="thanks_popup-body">
+                    <p>Ми стараємось відповідати максимально швидко</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+function submitForm() {
+    
+    if(!document.querySelector('[name="user_email"]').value){
+        if(!document.querySelector('[name="user_email"]').classList.contains("empty")){
+            document.querySelector('[name="user_email"]').classList.add('empty');
+            return false;
+        }   
+    }else{
+        if(document.querySelector('[name="user_email"]').classList.contains("empty")){
+            document.querySelector('[name="user_email"]').classList.remove('empty');
+        }   
+    }
+
+    if(!document.querySelector('[name="user_name"]').value){
+        if(!document.querySelector('[name="user_name"]').classList.contains("empty")){
+            document.querySelector('[name="user_name"]').classList.add('empty');
+            return false;
+        }   
+    }else{
+        if(document.querySelector('[name="user_name"]').classList.contains("empty")){
+            document.querySelector('[name="user_name"]').classList.remove('empty');
+        }   
+    }
+    
+    
+    const form = document.querySelector('.sense__form');
+    const formData = new FormData(form);
+
+
+  
+    fetch('https://api.nb-soft.tech/sites/sens/form_send/sendForm.php', {
+      method: 'POST',
+      body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        send_OK();
+      } else {
+        if(data.type === 'empty_post'){
+            alert('Заповніть поля відмічені *');
+            return false;
+        }
+        alert(`Під час надсилання сталася помилка: ${data.message}`);
+      }
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error);
+    });
+  }
+  
+
+document.querySelector('.sense__form__button').addEventListener('click', (e)=>{
+    e.preventDefault();
+
+    submitForm();
+})
+
+
+document.querySelector('[name="user_phone"]').addEventListener('click', (e)=>{
+    if(e.target.value.length < 4){
+        e.target.value = '+380';
+    }
+})
+
+document.querySelector('[name="user_phone"]').addEventListener('input', (e) => {
+    e.target.value = e.target.value.replace(/[^0-9+]/g, '');
+  });
+
+function send_OK(){
+    document.body.style.overflow = 'hidden';
+    document.querySelector('.thanks_popup').classList.add('active');
+    document.querySelector('.thanks_popup-content').addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+
+    document.querySelector('.sense__form').querySelectorAll('input').forEach((input)=>{
+        if(input.classList.contains('empty')){
+            input.classList.remove('empty');
+        }
+        input.value = '';
+    })
+
+    document.querySelector('.sense__form').querySelectorAll('textarea').forEach((input)=>{
+        input.value = '';
+    })
+}
+
+document.querySelector('.thanks_popup .close_popup').addEventListener('click', function (e) {
+    document.body.style.overflow = 'visible';
+    document.querySelector('.thanks_popup').classList.remove('active');
+});
+</script>
