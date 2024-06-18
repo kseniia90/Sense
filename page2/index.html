@@ -13,129 +13,44 @@
 <body>
     <main>
         <div class="container-sense">
-            <h1 class="sense-title1">Щотижневий розіграш сертифіката на <strong style="color:rgba(103, 88, 190, 1);">500 грн</strong> від інтернет-магазину Сенс </h1>
-            <div class="sense-coutdown">
-                <ul>
-                    <li><span id="days"></span>днів</li>
-                    <li><span id="hours"></span>годин</li>
-                    <li><span id="minutes"></span>хвилин</li>
-                    <li><span id="seconds"></span>секунд</li>
-                  </ul>
-            </div>
-            <div class="sense__contacts">
-                <div class="sense__contacts__content">
-                    <div class="sense__contacts__item">
-                        <div class="sense__contacts__title">
-                            <img src="./img/icon-phone.svg" alt="img" width="32" height="32">
-                            <div>
-                                <h3 class="sense-subtitle">Наш телефон</h3>
-                                <a class="text-17" href="tel:380935044070">093-504-40-70</a>
-                                <a class="text-12 call-me__mob" href="#" data-modal="#call-me">Передзвонити вам?</a>
-                            </div>
-                        </div>
-                        <p class="sense__contacts__messanges">Ви можете звартатись до нас у месенджерах: 
-                            <a href="https://t.me/sens_kyiv" target="_blank">Telegram</a>, 
-                            <a href="viber://chat?number=%2B380935044070" target="_blank">Viber</a>, 
-                            <a href="https://api.whatsapp.com/send?phone=%2B380935044070" target="_blank"><span style="color:#3498DB;">WhatsApp</span></a>
-                        </p>
-                        <p>Наш <a href="https://youtube.com/@sens_kyiv" target="_blank"><span style="color:#9B59B6;">youtube канал</span></a>. </p>
-
-
-                    </div>
-                    <div class="sense__contacts__item">
-                        <div class="sense__contacts__title">
-                            <img src="./img/icon-viber.svg" alt="img" width="32" height="32">
-                            <div>
-                                <h3 class="sense-subtitle">Адреса</h3>
-                                <p class="text-17"><i>Київ, пров. Микільський 1/25</i></p>
-                                <a class="text-12" href="#map_canvas">Мапа проїзду</a>
-                            </div>
-                        </div>
-                        <div class="sense__timetable">
-                            <div class="sense__timetable__item">
-                                <h4>Розклад роботи книгарні:</h4>
-                                <div class="sense__timetable__content">
-                                    <div class="sense__timetable__content__days">
-                                        <p>Пн-Пт:</p>
-                                        <p>08:00 - 22:00</p>
-                                    </div>
-                                    <div class="sense__timetable__content__days">
-                                        <p>Сб-Нд:</p>
-                                        <p>09:00 - 22:00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sense__timetable__item">
-                                <h4>Розклад роботи інтернет-магазину:</h4>
-                                <div class="sense__timetable__content">
-                                    <div class="sense__timetable__content__days">
-                                        <p>Пн-Нд:</p>
-                                        <p>10:00 - 18:00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Видача інтернет-замовлень в книгарні з 10:00 до 21:00. </li>
-                            <li>Працюємо без перерви та вихідних. </li>
-                            <li>Книги відправляємо щодня!</li>
-                        </ul>
-                    </div>
+            <h1 class="sense-title1">Щотижневий розіграш сертифіката на <strong class="purple">500 грн</strong> від інтернет-магазину Сенс </h1>
+            <div class="container2-sense">
+                <div class="sense-coutdown">
+                    <ul>
+                        <li><span id="days"></span>днів</li>
+                        <span>:</span>
+                        <li><span id="hours"></span>годин</li>
+                        <span>:</span>
+                        <li><span id="minutes"></span>хвилин</li>
+                        <span>:</span>
+                        <li><span id="seconds"></span>секунд</li>
+                      </ul>
                 </div>
-            </div>
-            <div class="sense__form__block">
-                <h2 class="sense-title">Звʼязатися з Сенсом</h2>
-                <form class="sense__form">
-                    <div class="sense__row">
-                        <div class="sense__column">
-                            <div class="input-block">
-                                <label for="username">Ваше ім’я<span class="purple">*</span></label>
-                                <input type="text" name="user_name" id="username" placeholder="Анна">
-                            </div>
-                            <div class="input-block">
-                                <label for="userphone">Номер телефону</label>
-                                <input type="phone" name="user_phone" id="userphone" maxlength="13" placeholder="+38 (0_ _)-_ _ _-_ _-_ _">
-                            </div>
+                <div class="sense__form__block">
+                    <form class="sense__form">
+                        <div class="sense__row">
+                            <input type="text" name="user_name" id="username" placeholder="Ім’я">
+                            <input type="text" name="user_email" id="useremail" class="empty" placeholder="E-mail">
                         </div>
-                        <div class="sense__column">
-                            <div class="input-block">
-                                <label for="useremail">E-mail<span class="purple">*</span></label>
-                                <input type="text" name="user_email" id="useremail" class="empty" placeholder="Ваш E-mail">
-                            </div>
-                            <div class="input-block">
-                                <label for="userquestion">Питання, яке цікавить<span class="purple">*</span></label>
-                                <select name="user_question" id="userquestion">
-                                    <option value="order">Онлайн замовлення</option>
-                                    <option value="work">Робота в Сенсі</option>
-                                    <option value="cooperation">Співпраця</option>
-                                    <option value="about-sense">Написати про Сенс</option>
-                                </select>
-                            </div>
+                        <div class="sense__checkbox-block">
+                            <input type="checkbox" id="pers-data" name="pers-data" checked />
+                            <label for="pers-data">Так, я даю згоду на зберігання та обробку моєї персональної інформації</label>
                         </div>
-                        <div class="sense__column sense-gap">
-                            <div class="add-file">
-                                <input type="file" name="user_file" id="user_file">
-                                <label for="user_file">
-                                    <img src="./img/add-file.svg" alt="" width="18" height="18">
-                                    <span> Прикріпити файл</span>
-                                </label>
-                            </div>
-                            <textarea name="usermessage" cols="30" rows="6" placeholder="Текст Вашого повідомлення"></textarea>
+                        <div class="sense__checkbox-block">
+                            <input type="checkbox" id="mail-data" name="mail-data" checked />
+                            <label for="mail-data">Так, я даю згоду на поширення адреси моєї пошти у разі виграшу.</label>
                         </div>
-                    </div>
-                    <div class="sense__row text-9">
-                        <p><span class="purple">*</span> - Поля із зазначеним символом <b>обов'язкові до заповнення.</b></p>
-                        <button class="sense__form__button open_thanks_popup">надіслати</button>
-                    </div>    
-                </form>
-            </div>
-            <div class="contacts-map">
-                <div class="contacts-map-canvas" id="map_canvas">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.4549657679564!2d30.5485967174732!3d50.44004439586791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf26e93d6ad1%3A0xdbbb7f77b5e5167b!2sSens!5e0!3m2!1sen!2sua!4v1655220779003!5m2!1sen!2sua"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <button class="sense__form__button open_thanks_popup">надіслати</button>  
+                    </form>
                 </div>
+                <p>Знову прокидаєшся з думкою «О ні, понеділок»? Перетвори свої думки з Сенсом в «О, ну нарешті понеділок»!</p>
+                <p>Щопонеділка шукай себе серед переможців сертифіката на 500 грн на покупку книжок у нашій книгарні. Взяти участь простіше простого — залишити свій імейл.</p>
+                <div class="sens-descr">
+                    Поділись своїм імейлом (і перевір, щоб без хибодруку) та стань учасником розіграшу, який відбувається щопонеділка о 7:00. Результат прийде на пошту, яка зазначена на цій сторінці. Списки переможців надсилаємо усім учасникам. Можливо, серед них будеш і ти! 
+                </div>
+                <p><strong>У розіграші можна брати участь щотижня. Розумієш, на що ми натякаємо?</strong></p>
+
             </div>
         </div>
         <div class="thanks_popup">
