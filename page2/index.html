@@ -27,7 +27,7 @@
                         <li><span id="minutes"></span>хвилин</li>
                         <span>:</span>
                         <li><span id="seconds"></span>секунд</li>
-                      </ul>
+                    </ul>
                 </div>
                 <div class="sense__form__block">
                     <form class="sense__form">
@@ -36,26 +36,76 @@
                             <input type="text" name="user_email" id="useremail" placeholder="E-mail">
                         </div>
                         <div class="sense__checkbox-block">
-                            <input type="checkbox" id="pers-data" name="pers-data"/>
+                            <input type="checkbox" id="pers-data" name="pers-data" />
                             <label for="pers-data">Так, я даю згоду на зберігання та обробку моєї персональної інформації</label>
                         </div>
                         <div class="sense__checkbox-block">
-                            <input type="checkbox" id="mail-data" name="mail-data"/>
+                            <input type="checkbox" id="mail-data" name="mail-data" />
                             <label for="mail-data">Так, я даю згоду на поширення адреси моєї пошти у разі виграшу.</label>
                         </div>
-                        <button class="sense__form__button open_thanks_popup">зареєструватися</button>  
+                        <button class="sense__form__button open_thanks_popup">зареєструватися</button>
                     </form>
                 </div>
                 <p>Знову прокидаєшся з думкою «О ні, понеділок»? Перетвори свої думки з Сенсом в «О, ну нарешті понеділок»!</p>
-                <p>Щопонеділка шукай себе серед переможців сертифіката на 500 грн на покупку книжок у нашій книгарні. Взяти участь простіше простого — залишити свій імейл.</p>
+                <p>Щопонеділка шукай себе серед переможців сертифіката на 500 грн на покупку книжок у нашій книгарні. Взяти участь
+                    простіше простого — залишити свій імейл.</p>
                 <div class="sens-descr">
-                    Поділись своїм імейлом (і перевір, щоб без хибодруку) та стань учасником розіграшу, який відбувається щопонеділка о 7:00. Результат прийде на пошту, яка зазначена на цій сторінці. Списки переможців надсилаємо усім учасникам. Можливо, серед них будеш і ти! 
+                    Поділись своїм імейлом (і перевір, щоб без хибодруку) та стань учасником розіграшу, який відбувається <strong>
+                        щопонеділка о
+                        7:00.</strong> Результат прийде на пошту, яка зазначена на цій сторінці. Списки переможців надсилаємо усім
+                    учасникам.
+                    Можливо, серед них будеш і ти! 
                 </div>
                 <p><strong>У розіграші можна брати участь щотижня. Розумієш, на що ми натякаємо?</strong></p>
-
+                <div class="sense__banner">
+                    <img src="img/banner.png" alt="">
+                </div>
             </div>
+
+           
+            <div class="sense2__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sense2__slider-card">
+                            <div class="sense2__slider-card-img">
+                                <img alt="our_works_img" loading="lazy" src="img/w02.jpg" width="329" height="222"/>
+                            </div>
+                            <h5 class="sense2__slider-subtitle">Переможці лютого</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sense2__slider-card">
+                            <div class="sense2__slider-card-img">
+                                <img alt="our_works_img" loading="lazy" src="img/w03.jpg" width="329" height="222"/>
+                            </div>
+                            <h5 class="sense2__slider-subtitle">Переможці березня</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sense2__slider-card">
+                            <div class="sense2__slider-card-img">
+                                <img alt="our_works_img" loading="lazy" src="img/w04.jpg" width="329" height="222"/>
+                            </div>
+                            <h5 class="sense2__slider-subtitle">Переможці квітня</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sense2__slider-card">
+                            <div class="sense2__slider-card-img">
+                                <img alt="our_works_img" loading="lazy" src="img/w05.jpg" width="329" height="222"/>
+                            </div>
+                            <h5 class="sense2__slider-subtitle">Переможці травня</h5>
+                        </div>
+                    </div>                            
+                </div>
+                <!-- <div class="swiper-button swiper-button-next"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div> -->
+            </div>
+         
+    
         </div>
-        <div class="thanks_popup">
+        <!-- <div class="thanks_popup">
             <div class="thanks_popup-dialog">
                 <div class="thanks_popup-content">
                     <div class="thanks_popup-header">
@@ -68,11 +118,47 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </main>  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   
     <script>
+
+var swiperOurWorks = new Swiper(".sense2__slider", {
+    freeMode: true,
+    loop: true,
+    // slidesPerView: 3,
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     hide: true,
+    // },
+    breakpoints: {
+        0: {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,   
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
+
+
+
         // thanks popup open/close on click
 
         if (document.querySelector('.thanks_popup') !== null) {
