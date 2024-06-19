@@ -101,13 +101,14 @@ body {
     margin-bottom: 40px !important;
 }
 
-
-
-.sense__form {
+.container2-sense .sense__form {
     display: flex;
     flex-direction: column;
     gap: 14px;
     font-size: 13px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
 }
 
 .sense__row {
@@ -116,94 +117,72 @@ body {
     gap: 18px; 
 }
 
-.sense__row.text-9 {
-    font-size: 9px;
-    line-height: 11.7px;
-    color: #7B7B7B;
-}
-.sense__row.text-9 span {
-    font-size: 13px;
-}
-
-.sense__column {
+.container2-sense .sense__row,
+.container2-sense .sense__checkbox-block {
+    max-width: 870px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    margin: 0 auto;
 }
 
-.sense__column.sense-gap {
-    gap: 6px;
+.container2-sense .sense__row {
+    margin-bottom: 40px;
 }
 
-.sense__column textarea {
-    height: 100%;
-}
-
-.input-block {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.sense__form input, textarea, select {
+.container2-sense .sense__form input {
     width: 100%;
     box-sizing: border-box;
     padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid #C6C6C7;
+    border: none;
+    border-bottom: 1px solid #000000;
     background: inherit;
 }
 
-.sense__form  select {
-    appearance: none;
-    background-image: url("./img/icon-arrow-select.svg");
-	background-repeat: no-repeat, repeat;
-	background-position: right 0.875rem top 50%, 0 0;
+.container2-sense .sense__form input::placeholder {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32.68px;
+    text-align: left;
+    color: #4c4c4c;
 }
 
-.sense__form input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
-    outline: 1px solid #C6C6C7;
+.container2-sense .sense__form input:active, 
+.container2-sense input:focus {
+    outline: none;
+}
+
+.container2-sense .sense__checkbox-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.container2-sense .sense__checkbox-block input {
+    width: 25px !important;
+    height: 25px;
+    accent-color:  #50812E;
 }
 
 .sense__form input.empty {
     border: 1px solid #E94235;
 }
 
-.add-file  input {
-    display: none;
-}
 
-.add-file  label {
+.container2-sense .sense__form__button {
+    margin-top: 30px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.add-file  label span {
-    color: #6758BE;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.sense__form__button{
-    cursor: pointer;
-    width: 300px;
+    width: 100%;
     border: none;
-    border-radius: 6px;
+    border-radius: 7px;
     background: #6758BE;
-    padding: 7px;
+    padding: 25px;
     color: #FFF;
     text-align: center;
-    font-size: 13px;
-    font-style: normal;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 14.95px; /* 115% */
+    line-height: 43.58px; /* 115% */
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 @media (min-width: 769px) {
@@ -212,13 +191,6 @@ body {
     }
 }
 
-.sense__form input::placeholder {  
-    color: #ACACAC;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .container-sense .contacts-map {
     overflow: hidden;
