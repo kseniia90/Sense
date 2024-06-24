@@ -14,21 +14,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main class="sense-winn">
         <div class="container-sense">
-            <h1 class="sense-title1">Щотижневий розіграш сертифіката на <strong class="purple">500 грн</strong> від інтернет-магазину Сенс </h1>
-            <div class="container2-sense">
+        <div class="sense-winn-top">
+            <h1 class="sense-title1">Щотижневий розіграш сертифіката на <strong class="purple">500 грн</strong> від
+                інтернет-магазину Сенс </h1>
                 <div class="sense-coutdown">
                     <ul>
-                        <li><span id="days"></span>днів</li>
+                        <li><span id="days">0</span>дні</li>
                         <span>:</span>
-                        <li><span id="hours"></span>годин</li>
+                        <li><span id="hours">0</span>годин</li>
                         <span>:</span>
-                        <li><span id="minutes"></span>хвилин</li>
+                        <li><span id="minutes">0</span>хвилин</li>
                         <span>:</span>
-                        <li><span id="seconds"></span>секунд</li>
+                        <li><span id="seconds">0</span>секунд</li>
                     </ul>
                 </div>
+        </div>
+            <div class="container2-sense">
                 <div class="sense__form__block">
                     <form class="sense__form">
                         <div class="sense__row">
@@ -43,7 +46,7 @@
                             <input type="checkbox" id="mail-data" name="mail-data" />
                             <label for="mail-data">Так, я даю згоду на поширення адреси моєї пошти у разі виграшу.</label>
                         </div>
-                        <button class="sense__form__button open_thanks_popup">зареєструватися</button>
+                        <button class="sense__form__button ">зареєструватися</button>
                     </form>
                 </div>
                 <p>Знову прокидаєшся з думкою «О ні, понеділок»? Перетвори свої думки з Сенсом в «О, ну нарешті понеділок»!</p>
@@ -58,40 +61,67 @@
                 </div>
                 <p><strong>У розіграші можна брати участь щотижня. Розумієш, на що ми натякаємо?</strong></p>
                 <div class="sense__banner">
-                    <img src="img/banner.png" alt="">
+                    <img src="img/banner.png" alt="" width="1188" height="288" class="sense-winn-desktop">
+                    <img src="img/banner-mob.png" alt="" width="338" height="330" class="sense-winn-mob">
                 </div>
             </div>
 
+            <div class="sense2-winners">
+                <a href="blank.pdf" target="_blank" class="sense2__winner-card">
+                    <div class="sense2__winner-card-img">
+                        <img alt="our_works_img" loading="lazy" src="img/w02.jpg" width="329" height="222"/>
+                    </div>
+                    <p class="sense2__slider-subtitle">Переможці лютого</p>
+                </a>
+                <a href="blank.pdf" target="_blank" class="sense2__winner-card">
+                    <div class="sense2__winner-card-img">
+                        <img alt="our_works_img" loading="lazy" src="img/w03.jpg" width="329" height="222"/>
+                    </div>
+                    <p class="sense2__slider-subtitle">Переможці березня</p>
+                </a>
+                <a href="blank.pdf" target="_blank" class="sense2__winner-card">
+                    <div class="sense2__winner-card-img">
+                        <img alt="our_works_img" loading="lazy" src="img/w04.jpg" width="329" height="222"/>
+                    </div>
+                    <p class="sense2__slider-subtitle">Переможці квітня</p>
+                </a>
+                <a href="blank.pdf" target="_blank" class="sense2__winner-card">
+                    <div class="sense2__winner-card-img">
+                        <img alt="our_works_img" loading="lazy" src="img/w05.jpg" width="329" height="222"/>
+                    </div>
+                    <p class="sense2__slider-subtitle">Переможці травня</p>
+                </a>
+            </div>
            
-            <div class="sense2__slider">
+            <!-- <div class="sense2__slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="blank.pdf" target="_blank" class="sense2__slider-card">
-                            <div class="sense2__slider-card-img">
+                        <a href="blank.pdf" target="_blank" class="sense2__winner-card">
+                            <div class="sense2__winner-card-img">
                                 <img alt="our_works_img" loading="lazy" src="img/w02.jpg" width="329" height="222"/>
                             </div>
                             <p class="sense2__slider-subtitle">Переможці лютого</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="blank.pdf" target="_blank" class="sense2__slider-card">
-                            <div class="sense2__slider-card-img">
+                        <a href="blank.pdf" target="_blank" class="sense2__winner-card">
+                            <div class="sense2__winner-card-img">
                                 <img alt="our_works_img" loading="lazy" src="img/w03.jpg" width="329" height="222"/>
                             </div>
                             <p class="sense2__slider-subtitle">Переможці березня</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="blank.pdf" target="_blank" class="sense2__slider-card">
-                            <div class="sense2__slider-card-img">
+                        <a href="blank.pdf" target="_blank" class="sense2__winner-card">
+                            <div class="sense2__winner-card-img">
                                 <img alt="our_works_img" loading="lazy" src="img/w04.jpg" width="329" height="222"/>
                             </div>
                             <p class="sense2__slider-subtitle">Переможці квітня</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="blank.pdf" target="_blank" class="sense2__slider-card">
-                            <div class="sense2__slider-card-img">
+                        <a href="blank.pdf" target="_blank" class="sense2__winner-card">
+                            <div class="sense2__winner-card-img">
                                 <img alt="our_works_img" loading="lazy" src="img/w05.jpg" width="329" height="222"/>
                             </div>
                             <p class="sense2__slider-subtitle">Переможці травня</p>
@@ -100,103 +130,143 @@
                 </div>
                 <div class="swiper-button swiper-button-next"></div>
                 <div class="swiper-button swiper-button-prev"></div>
-                <!-- <div class="swiper-scrollbar"></div> -->
-            </div>
-         
-    
+            </div> -->
         </div>
-        <!-- <div class="thanks_popup">
-            <div class="thanks_popup-dialog">
-                <div class="thanks_popup-content">
-                    <div class="thanks_popup-header">
-                        <img class="close_popup" src="./img/ic_outline-close.svg" alt="x">
-                        <img class="thanks-icon" src="./img/thanks-icon.svg" alt="" >
-                        <h2 class="sense-title">Дякуємо за звернення до команди Сенс!</h2>
-                    </div>
-                    <div class="thanks_popup-body">
-                        <p>Ми стараємось відповідати максимально швидко</p>
+        <div class="winn_popup">
+            <div class="winn_popup-dialog">
+                <div class="winn_popup-content">
+                    <div class="winn_popup-body">
+                        <img class="close_popup" src="./img/winn-popup-close.svg" alt="x" width="48" height="48">
+                        <div class="winn_popup-left winn_popup-form">
+                            <h3>Отримай <strong class="purple">500 грн</strong> на книжки!</h3>
+                            <p>Бери участь у щотижневому розіграші — вигравай сертифікат на книжковий шопінг.</p>
+                            <ul class="sense-winn-desktop">
+                                <li>Купуй книжки на сайті (за бажанням).</li>
+                                <li>Залишай свій імейл.</li>
+                                <li>Щопонеділка шукай себе у списку переможців!</li>
+                            </ul>
+                            <form class="sense__form">
+                                <div class="sense__row">
+                                    <input type="text" name="user_name" id="username-popup" placeholder="Ім’я">
+                                    <input type="text" name="user_email" id="useremail-popup" placeholder="E-mail">
+                                </div>
+                                <div class="sense__row">
+                                    <button class="sense__form__button">Надіслати дані для участі</button>
+                                    <a href="" class="sense__form__button transp">Детальніше про розіграш</a>
+                                </div>
+                                <div class="sense__checkbox-block">
+                                    <input type="checkbox" id="pers-data-popup" name="pers-data" />
+                                    <label for="pers-data-popup">Так, я даю згоду на зберігання та обробку моєї персональної інформації</label>
+                                </div>
+                                <div class="sense__checkbox-block">
+                                    <input type="checkbox" id="mail-data-popup" name="mail-data" />
+                                    <label for="mail-data-popup">Так, я даю згоду на поширення адреси моєї пошти у разі виграшу.</label>
+                                </div>
+                            </form>
+                            <ul class="sense-winn-mob">
+                                <li>Купуй книжки на сайті (за бажанням).</li>
+                                <li>Залишай свій імейл.</li>
+                                <li>Щопонеділка шукай себе у списку переможців!</li>
+                            </ul>
+                        </div>
+                        <div class="winn_popup-left winn_popup-thanks">
+                            <h3>Вітаємо, ти <strong class="purple">учасник!</strong></h3>
+                            <p>Лист з підтвердженням вже полетів тобі на пошту. Перевіряй та тримай кулачки: можливо, сертифікат стане саме твоїм!</p>
+                        </div>
+                        <div class="winn_popup-right">
+                            <img src="img/winn-popup-bg.jpg" alt="" width="420" height="599" class="sense-winn-desktop">
+                            <img src="img/winn-popup-bg-mob.jpg" alt="" width="362" height="123" class="sense-winn-mob">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
+        
 
     </main>  
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
   
     <script>
 
-var swiperOurWorks = new Swiper(".sense2__slider", {
-    freeMode: true,
-    loop: true,
-    // slidesPerView: 3,
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    // },
-    // scrollbar: {
-    //     el: ".swiper-scrollbar",
-    //     hide: true,
-    // },
-    breakpoints: {
-        0: {
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: 15,
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 15,   
-        },
-        1420: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-        },
-    },
-});
+    // var swiperOurWorks = new Swiper(".sense2__slider", {
+    //     freeMode: true,
+    //     loop: true,
+        // slidesPerView: 3,
+        // navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        // },
+        // scrollbar: {
+        //     el: ".swiper-scrollbar",
+        //     hide: true,
+        // },
+    //     breakpoints: {
+    //         0: {
+    //             slidesPerView: "auto",
+    //             centeredSlides: true,
+    //             spaceBetween: 15,
+    //         },
+    //         768: {
+    //             slidesPerView: 3,
+    //             spaceBetween: 15,   
+    //         },
+    //         1420: {
+    //             slidesPerView: 4,
+    //             spaceBetween: 40,
+    //         },
+    //     },
+    // });
 
+    // winn popup open/close on click
 
+        if (document.querySelector('.winn_popup') !== null) {
 
+            window.setTimeout(function() {
+                document.body.style.overflow = 'hidden';
+                document.querySelector('.winn_popup').classList.add('active-form');
+            }, 6000);
 
-        // thanks popup open/close on click
+            // document.querySelectorAll('.btn_open_modal-nb').forEach(function (button) {
+            //     button.addEventListener('click', function (e) {
+            //         document.body.style.overflow = 'hidden';
+            //         document.querySelector('.winn_popup').classList.add('active-form');
+            //         document.querySelector('.modal_body-nb').classList.remove('modal_body-nb-active');
+            //     });
+            // })
 
-        if (document.querySelector('.thanks_popup') !== null) {
-
-            document.querySelectorAll('.open_thanks_popup').forEach(function (button) {
-                button.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.body.style.overflow = 'hidden';
-                    document.querySelector('.thanks_popup').classList.add('active');
-                });
-            })
-            document.querySelector('.thanks_popup-content').addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-
-            document.querySelector('.thanks_popup .close_popup').addEventListener('click', function (e) {
+            document.querySelector('.winn_popup .close_popup').addEventListener('click', function (e) {
                 document.body.style.overflow = 'visible';
-                document.querySelector('.thanks_popup').classList.remove('active');
+                document.querySelector('.winn_popup').classList.remove('active-form');
+                document.querySelector('.winn_popup').classList.remove('active-thanks');
             });
         };
 
-            const second = 1000,
-                  minute = second * 60,
-                  hour = minute * 60,
-                  day = hour * 24;
-            let countDown = new Date('jun 27, 2024 00:00:00').getTime(),
-                x = setInterval(function () {
+        // countDown
+        const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+        let countDown = new Date('jun 29, 2024 00:00:00').getTime(),
+            x = setInterval(function () {
 
-                    let now = new Date().getTime(),
-                        distance = countDown - now;    
-                        document.getElementById('days').innerText = Math.floor(distance / (day)),
-                        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-                        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-                        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-                    var sec = Math.floor((distance % (minute)) / second);
-                }, second)
-
-        
+                let now = new Date().getTime(),
+                    distance = countDown - now;  
+                    days = Math.floor(distance / (day));
+                    days = days < 10 ? '0' + days : days;  
+                    document.getElementById('days').innerText = days,
+                    hours = Math.floor((distance % (day)) / (hour));
+                    hours = hours < 10 ? '0' + hours : hours;
+                    document.getElementById('hours').innerText = hours,
+                    minutes = Math.floor((distance % (hour)) / (minute)),
+                    minutes = minutes < 10 ? '0' + minutes : minutes;
+                    document.getElementById('minutes').innerText = minutes,
+                    seconds = Math.floor((distance % (minute)) / second),
+                    seconds = seconds < 10 ? '0' + seconds : seconds;
+                    document.getElementById('seconds').innerText = seconds;
+                var sec = Math.floor((distance % (minute)) / second);
+            }, second);
 
     </script>
 
