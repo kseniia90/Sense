@@ -344,29 +344,12 @@ h4 {
     transition: visibility 0s, opacity 0.2s linear;
 }
 
-.winn_popup.active-form,
-.winn_popup.active-thanks {
+.winn_popup-form.active,
+.winn_popup-thanks.active {
     opacity: 1;
     overflow-y: auto;
-    z-index: 50;
+    z-index: 150;
     visibility: visible;
-}
-
-.winn_popup-left.winn_popup-form,
-.winn_popup-left.winn_popup-thanks {
-    display: none;
-}
-
-.winn_popup.active-form .winn_popup-left.winn_popup-form {
-    display: block;
-}
-
-.winn_popup.active-thanks .winn_popup-left.winn_popup-thanks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 46px !important;
-    padding-bottom: 46px !important;
 }
 
 .winn_popup-dialog {

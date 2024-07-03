@@ -132,12 +132,12 @@
                 <div class="swiper-button swiper-button-prev"></div>
             </div> -->
         </div>
-        <div class="winn_popup">
+        <div class="winn_popup winn_popup-form">
             <div class="winn_popup-dialog">
                 <div class="winn_popup-content">
                     <div class="winn_popup-body">
                         <img class="close_popup" src="./img/winn-popup-close.svg" alt="x" width="48" height="48">
-                        <div class="winn_popup-left winn_popup-form">
+                        <div class="winn_popup-left">
                             <h3>Отримай <strong class="purple">500 грн</strong> на книжки!</h3>
                             <p>Бери участь у щотижневому розіграші — вигравай сертифікат на книжковий шопінг.</p>
                             <ul class="sense-winn-desktop">
@@ -169,8 +169,21 @@
                                 <li>Щопонеділка шукай себе у списку переможців!</li>
                             </ul>
                         </div>
-                        <div class="winn_popup-left winn_popup-thanks">
-                            <h3>Вітаємо, ти <strong class="purple">учасник!</strong></h3>
+                        <div class="winn_popup-right">
+                            <img src="img/winn-popup-bg.jpg" alt="" width="420" height="599" class="sense-winn-desktop">
+                            <img src="img/winn-popup-bg-mob.jpg" alt="" width="362" height="123" class="sense-winn-mob">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="winn_popup winn_popup-thanks">
+            <div class="winn_popup-dialog">
+                <div class="winn_popup-content">
+                    <div class="winn_popup-body">
+                        <img class="close_popup" src="./img/winn-popup-close.svg" alt="x" width="48" height="48">
+                        <div class="winn_popup-left">
+                            <h3>Вітаємо,<br> ти <strong class="purple">учасник!</strong></h3>
                             <p>Лист з підтвердженням вже полетів тобі на пошту. Перевіряй та тримай кулачки: можливо, сертифікат стане саме твоїм!</p>
                         </div>
                         <div class="winn_popup-right">
@@ -225,22 +238,16 @@
 
             window.setTimeout(function() {
                 document.body.style.overflow = 'hidden';
-                document.querySelector('.winn_popup').classList.add('active-form');
+                document.querySelector('.winn_popup-form').classList.add('active');
             }, 6000);
 
-            // document.querySelectorAll('.btn_open_modal-nb').forEach(function (button) {
-            //     button.addEventListener('click', function (e) {
-            //         document.body.style.overflow = 'hidden';
-            //         document.querySelector('.winn_popup').classList.add('active-form');
-            //         document.querySelector('.modal_body-nb').classList.remove('modal_body-nb-active');
-            //     });
-            // })
-
-            document.querySelector('.winn_popup .close_popup').addEventListener('click', function (e) {
-                document.body.style.overflow = 'visible';
-                document.querySelector('.winn_popup').classList.remove('active-form');
-                document.querySelector('.winn_popup').classList.remove('active-thanks');
-            });
+            document.querySelectorAll('.winn_popup .close_popup').forEach(function (button) {
+                button.addEventListener('click', function (e) {
+                    document.body.style.overflow = 'visible';
+                    document.querySelector('.winn_popup-form').classList.remove('active');
+                    document.querySelector('.winn_popup-thanks').classList.remove('active');
+                });
+            })
         };
 
         // countDown
