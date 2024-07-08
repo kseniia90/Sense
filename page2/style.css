@@ -386,6 +386,12 @@ h4 {
     border-radius: 7px 0 0 7px;
 }
 
+.winn_popup-thanks .winn_popup-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .winn_popup .winn_popup-right {
     border-radius: 0  7px 7px 0;
 }
