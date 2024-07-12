@@ -553,7 +553,7 @@ h4 {
         position: relative;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 103px 1fr;
+        grid-template-rows: 123px 1fr;
     }
 
     .winn_popup .winn_popup-left {
@@ -742,6 +742,7 @@ h4 {
 
     .winn_popup .sense__row {
         gap: 8px;
+        flex-direction: column;
     }
 
     .winn_popup .sense__form input {
